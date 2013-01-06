@@ -1,0 +1,119 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+     <head>
+          <meta http-equiv="X-UA-Compatible"  content="IT=edge,chrome=IE8" />
+          <title>Snap</title>
+          <link rel="stylesheet" type="text/css" href="styles/conversation.css" />
+          <link rel="stylesheet" type="text/css" href="styles/dashboard.css" />
+          <script type="text/javascript" src="vendors/jquery/jquery-1.8.3.min.js"></script>
+          <script type="text/javascript" src="vendors/jquery/jquery-ui-1.9.2.custom.min.js"></script>
+          <script type="text/javascript" src="vendors/jsjac/jsjac.js"></script>
+          <script type="text/javascript" src="vendors/moment.js/moment.min.js"></script>
+          <script type="text/javascript" src="scripts/common.js"></script>
+		  <script type="text/javascript" src="scripts/config.default.js"></script>
+		  <script type="text/javascript" src="scripts/config.js"></script>
+          <script type="text/javascript" src="scripts/wingman.js"></script>
+          <script type="text/javascript" src="scripts/dashboard.js"></script>
+          <script type="text/javascript" src="scripts/calls.js"></script>
+          <script type="text/javascript">
+               $(document).ready(function () {
+                    init();
+               });
+          </script>
+     </head>
+     <body>
+          <div class="topbar">
+               <div id="DisplayNameBox" style="margin-right: 20px; float:left;">
+                    <span id="DisplayName">John Doe</span>
+                    <input id="DisplayName_Entry" type="text" value="John Doe" style="display:none;" /><br />
+                    <span id="StatusMessage">this is my status..</span>
+                    <input id="StatusMessage_Entry" type="text" value="this is my status.." style="display:none;" /><br />
+               </div>
+               <div style="float:right;">
+                    Roster Style: <a id='TileView' href="#">Tile View</a> | <a id='ListView' href="#">List View</a>
+               </div>
+               <div style="clear:both; height:0px;">&nbsp;</div>
+          </div>
+          <div class="agent">
+               <div class="agentcolumn">
+                    Agent:
+                    <div style="float:right;">
+                         <a href="#">Log In</a>
+                    </div>
+               </div>
+               <div class="agentcolumn">
+                    Calls:
+                    <div style="float:right;">
+                         <a href="#">0</a>
+                    </div>
+               </div>
+               <div class="agentcolumn">
+                    Chats:
+                    <div style="float:right;">
+                         <a href="#">0</a>
+                    </div>
+               </div>
+               <div class="agentcolumn">
+                    Wrap Up Timer:
+                    <div style="float:right;">
+                         <a href="#">0:00</a>
+                    </div>
+               </div>
+               <div style="clear:both; height:0px;">&nbsp;</div>
+          </div>
+          <div id="Roster">
+               <div id='RosterItemTemplate' class='rosteritem'>
+                    <div id='left' class='left' style='background-color: #CCCCCC;'>
+                         &nbsp;
+                         <!--<img class='show_img' src='bullet_ball_glass_grey_shadow.png' alt='0' />-->
+                    </div>
+                    <div id='middle' class='middle'>
+                         <div class='displayname'>
+                              <div class='label'></div>
+                              <div class='agentmode' style='display:none;'>Agent</div>
+                              <div style='clear:both;height:1px;'>&nbsp;</div>
+                         </div>
+                         <div class='statusmessage'></div>
+                    </div>
+                    <div id='right' class='right'>
+                         <img class='avatar-image' src='images/avatar.png' alt='0' />
+                    </div>
+                    <div style='clear:both;height: 1px;'>&nbsp;</div>
+               </div>
+          </div>
+          <div id="Calls">
+               <div class='CallItem'>
+                    <div class='middle'>
+                         <div class='phonenumber'>From 8583<br />
+                         via 714-555-6091<br />
+                         to 714-555-8071<br />
+                         </div>
+                         <div class='connectedto'>Status: Ext. 531</div>
+                         <div style='clear:both;height:1px;'>&nbsp;</div>
+                    </div>
+                    <div class='right'>
+                         <img style='float:right;height: 30px;' src='images/phone.png' alt='0' />
+                         <div class='CallDID' style='float:right;'></div>
+                         <div class='CallTimer' style='float:right;'>0 seconds</div>
+                    </div>
+                    <div style='clear:both;height: 1px;'>&nbsp;</div>
+               </div>
+               <div class='CallItem'>
+                    <div class='middle'>
+                         <div class='phonenumber'>From 714-555-6091<br />
+                         to 714-555-8071</div>
+                         <div class='connectedto'>Status: Sales Queue</div>
+                         <div style='clear:both;height:1px;'>&nbsp;</div>
+                    </div>
+                    <div class='right'>
+                         <img style='float:right;height: 30px;' src='images/phone.png' alt='0' />
+                         <div class='CallDID' style='float:right;'></div>
+                         <div class='CallTimer' style='float:right;'>0 seconds</div>
+                    </div>
+                    <div style='clear:both;height: 1px;'>&nbsp;</div>
+               </div>
+          </div>
+          <div class="connectionstatus">status: disconnected</div>
+          <div id="Debug"></div>
+     </body>
+</html>

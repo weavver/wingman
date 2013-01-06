@@ -1,0 +1,310 @@
+html, body
+{
+     font-family: verdana;
+     font-size: 10pt;
+     width: 100%;
+     padding: 0px;
+     margin: 0px;
+     background-color: #616161;
+}
+
+body
+{
+     overflow-y: auto;
+}
+
+.item
+{
+	width: 100%;
+	clear: both;
+}
+
+.phonenumber, .phonenumberover
+{
+	padding-top: 1px;
+	padding-right: 10px;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+}
+
+.phonenumberover
+{
+     height: 20px;
+     padding-top: 0px;
+     padding-right: 4px;
+	border-top: 1px solid #CCCCCC;
+	border-right: 1px solid #CCCCCC;
+	border-bottom: 1px solid #CCCCCC;
+     float:left;
+}
+
+.ContactItem, .ContactItemOver
+{
+	height: 23px;
+     color: black;  
+     font: 10pt verdana;
+     overflow: hidden;
+     text-overflow: ellipsis;
+     cursor: default;
+     padding-top: 3px;
+	padding-left: 5px;
+     border-top: none;
+     border-left: 15px solid orange;
+     border-right: none;
+     border-bottom: none;
+     vertical-align: middle;
+}
+
+.ContactItemOver
+{
+	height: 23px;
+	vertical-align: middle;
+	padding-left: 19px;
+     padding-top: 2px;
+	border-top: 1px solid #CCCCCC;
+	border-bottom: 1px solid #CCCCCC;
+	border-left: 1px solid #CCCCCC;
+}
+
+.recentcall, .recentcallover
+{
+     height: 20px;
+     padding-top: 5px;
+     padding-left: 10px;
+     font-size: 11px;
+     height: 20px; 
+     border: none;
+     cursor: pointer;
+}
+
+#preflight
+{
+     display: none;
+     z-index: -10;
+}
+
+#wrapup
+{
+     display: none;
+     z-index: -20;
+}
+
+#Chat
+{
+     display: none;
+     z-index: -30;
+}
+
+.recentcallover
+{
+     border: 1px solid #CCCCCC;
+     padding-top: 4px;
+     padding-left: 9px;
+}
+
+.recentcall_datetime, .recentcall_datetimeover
+{
+     height: 20px;
+     float:right;
+     color:blue;
+     padding-top: 1px;
+     padding-right: 10px;
+}
+
+.recentcall_datetimeover
+{
+     height: 19px;
+     padding-top: 1px;
+     padding-right: 9px;
+}
+
+.CallItem
+{
+     background-color: #FFFFFF;
+     border: 1px solid #CCCCCC;
+     color: Black;
+     margin-bottom: 1px;
+     padding: 3px;
+     min-width: 250px;
+     height: 80px;
+}
+
+#Calls
+{
+     border-top: 10px solid #CCCCCC;
+     clear:both;
+     padding-top: 1px;
+     padding-bottom: 35px;
+}
+
+#Roster
+{
+     clear: both;
+}
+
+.RosterItem, .RosterItemOver
+{
+     background-color: #FFFFFF;
+     border: 1px solid #CCCCCC;
+     color: #000000;
+     color: Black;
+     margin: 0px;
+     margin-bottom: 1px;
+     min-width: 250px;
+     height: 33px;
+     cursor: default;
+     user-select: none;
+     -webkit-user-select: none;
+     -moz-user-select: none;
+     -khtml-user-select: none;
+}
+
+.RosterItemOver
+{
+     background-color: #ddf7ff;
+}
+
+a
+{
+     text-decoration: none;
+     padding: 2px;
+}
+
+a:visited
+{
+     color: #FFFFFF;
+}
+
+.overflow, .label, .status
+{
+     color: black;
+     font: 10pt verdana;
+     overflow: hidden;
+     text-overflow: ellipsis;
+     height: 17px;
+     cursor: default;
+}
+
+.label
+{
+     color: Black;
+     display: inline-block;
+     float: left;
+}
+
+.topbar
+{
+      padding: 5px;
+      background-color: grey;
+      clear: both;
+      color: #FFFFFF;
+      margin-bottom: 1px;
+}
+
+.status
+{
+     padding-right: 2px;
+     padding-top: 4px;
+     color: gray;
+     font: 9pt verdana;
+     cursor: default;
+     clear: both;
+}
+
+.connectionstatus
+{
+     position: fixed;
+     right: 0px;
+     bottom: 0px;
+     background-color: White;
+     padding: 5px;
+     padding-left: 10px;
+     text-align: right;
+     z-index: 300;
+}
+
+.avatar
+{
+     float: right;
+     width: 48px;
+     text-align: center;
+     vertical-align: middle;
+     max-width: 48px;
+     padding-right: 2px;
+     margin-left: 15px;
+}
+
+.avatar-image
+{
+     width: 30px;
+     margin: 2px;
+}
+
+.agent
+{
+     margin: auto;
+     width:auto;
+     clear:both;
+     margin-bottom: 1px;
+}
+
+.msg
+{
+     clear:both;
+     word-wrap: break-word;
+}
+
+.agentcolumn
+{
+     max-width: 150px;
+     float:left;
+     width:100%;
+     background-color: #c16767;
+     border: 1px solid #6d4a4a;
+     padding: 5px;
+}
+
+.agentmode
+{
+     background-color: Red;
+     font-size: 10px;
+     color: White;
+     margin-left: 10px;
+     margin-right: 3px;
+     float:right;
+     padding: 2px;
+     text-align: center;
+     vertical-align: middle;
+     border: 1px solid black;
+}
+
+.show
+{
+     clear:both;
+}
+
+.left
+{
+     float: left;
+     margin: auto;
+     height: 29px;
+     width: 10px;
+     margin: 2px;
+}
+
+.middle
+{
+     vertical-align: top;
+     text-align: left;
+     float:left;
+     height: 33px;
+     padding-left: 5px;
+     padding-top: 3px;
+}
+
+.right
+{
+     float:right;
+     display: inline-block;
+}

@@ -1,0 +1,213 @@
+﻿
+html, body
+{
+     height: 100%;
+     margin: 0;
+     padding: 0;
+     width: 100%;
+     background-color: #616161;
+}
+     
+#container
+{
+     width: 100%;
+     height: 100%;
+}
+
+#EndChatLayer
+{
+     float: right;
+     margin-right: 0px;
+     padding-top: 0px;
+}
+
+#EndChat
+{
+     padding-left: 15px;
+     padding-right: 15px;
+     height: 30px;
+     font-size: 15px;
+}
+
+.phonenumber
+{
+     clear:both;
+     text-align: left;
+}
+
+.connectedto
+{
+     clear:both;
+     text-align: left;
+}
+     
+#topPanel
+{
+     position: absolute;
+     top: 0px;
+     bottom: 108px;
+     width: 100%;
+}
+
+#bottomPanel
+{
+     position: absolute;
+     bottom: 0;
+     height: 97px;
+     width: 100%;
+}
+
+#chat
+{
+     display:none;
+}
+
+#chatBox
+{
+     background-color: #FFFFFF;
+     color: #000000;
+     height: 100%;
+     padding: 5px;
+     overflow: auto;
+     z-index: 10;
+}
+
+ #participants
+ {
+     float: right;
+     width: 150px;
+     height: 100%;
+     margin-left: 1px;
+     background-color: white;
+     overflow: auto;
+     padding: 5px;
+}
+
+#messageBox
+{
+     background-color: #FFFFFF;
+     margin-top: 0px;
+}
+
+#SendMessage
+{
+     height: 96px;
+     margin: 0px;
+     width: 75px;
+     text-align: center;
+}
+
+#CommentUpdate
+{
+      width: 100%;
+      height: 30px;
+      border: 0px;
+}
+
+#preflight
+{
+     position: absolute;
+     left: 0;
+     top: 0;
+     bottom: 0;
+     right: 0;
+     z-index: 10;
+     display:none;
+}
+
+#intaketitle
+{
+     color: #FFFFFF;
+     font-size: 15pt;
+     margin-left: 10px;
+     margin-top: 10px;
+}
+
+#intakeform
+{
+     -moz-border-radius: 6px;
+     -webkit-border-radius:6px;
+     background-color: #FFFFFF;
+     min-height: 200px;
+     margin: 10px;
+     padding: 15px;
+     font-size: 11pt;
+     z-index: 10;
+}
+
+input[type="button"]
+{
+     -webkit-appearance: button;
+}
+
+#preflight input[type="button"]
+{
+     float: right;
+     height: 30px;
+     width: 100px;
+     margin-right: 15px;
+     margin-bottom: 5px;
+     -webkit-appearance: button;
+}
+
+#status
+{
+     background-color: #FFFFFF;
+     height: 20px;
+     padding: 3px 3px 3px 10px;
+     clear: both;
+}
+
+#wrapup
+{
+     position: absolute;
+     left: 0;
+     top: 0;
+     bottom: 0;
+     right: 0;
+     background-color: #3b3b3b;
+     z-index: 10000;
+     display: none;
+}
+
+#thankyou
+{
+     color: White;
+     font-size: 24px;
+     margin-left: 35px;
+     margin-right: 35px;
+     margin-top: 35px;
+}
+
+#thankyoustartover
+{
+     color: #FFFFFF;
+     font-size: 18px;
+}
+
+.intakeFieldLabel
+{
+     clear:left;
+     float:left;
+     min-width: 120px;
+}
+
+.intakeFieldData
+{
+     float:left;
+     max-width: 200px;
+     margin-bottom: 10px;
+}
+
+.connectionstatus
+{
+     position: absolute;
+     right: 0px;
+     bottom: 0px;
+     z-index: 300;
+     padding: 1px;
+     background-color: #FFFFFF;
+     padding-right: 5px;
+     padding-left: 10px;
+     text-align: right;
+}

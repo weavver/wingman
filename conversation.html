@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+     <title>Weavver Chat</title>
+     <link rel="icon" href="/Vendors/JSJaC/WeavverChat.png" sizes="64x64" type="image/png" />
+     <link rel="apple-touch-icon-precomposed" href="WeavverChat.png" />
+     <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+     <link rel="stylesheet" type="text/css" href="Style.css" />
+     <link rel="stylesheet" type="text/css" href="WeavverChat.css" />
+     <script type="text/javascript" src="jquery-1.8.3.min.js"></script>
+     <script type="text/javascript" src="JSJaC.js"></script>
+     <script type="text/javascript" src="scripts/Common.js"></script>
+     <script type="text/javascript" src="scripts/wingman.js"></script>
+     <script type="text/javascript" src="scripts/message.js"></script>
+     <script src="ckeditor/ckeditor.js"></script>
+     <script type="text/javascript">
+     </script>
+</head>
+<body>
+     <div id="preflight">
+          <div id="intaketitle">Please fill out the following form to get started:</div>
+          <div id="intakeform">
+               <div class="intakeFieldLabel" style="padding-bottom: 3px;">
+                    What department would you like to speak to?
+                    <asp:RequiredFieldValidator ID="DepartmentValidator" ControlToValidate="Department" runat="server" Text="*" ForeColor="Red"></asp:RequiredFieldValidator>
+               </div>
+               <div class="intakeFieldData" style='clear:both;'>
+                    <input id='Sales' name='Department' type="radio" /> <label for='Sales'>Sales</label><br />
+                    <input id='Support' name='Department' type="radio" /> <label for='Support'>Support</label>
+               </div>
+               <div class="intakeFieldLabel">
+                    Your Name: <asp:RequiredFieldValidator ID="UserNameValidator" ControlToValidate="UserName" runat="server" Text="*" ForeColor="Red"></asp:RequiredFieldValidator>
+               </div>
+               <div class="intakeFieldData">
+                    <input ID="UserName" style="width:200px;" />
+               </div>
+               <div class="intakeFieldLabel">
+                    E-mail Address: <asp:RequiredFieldValidator ID="EmailValidator" ControlToValidate="EmailAddress" runat="server" Text="*" ForeColor="Red"></asp:RequiredFieldValidator>
+               </div>
+               <div class="intakeFieldData">
+                    <input ID="EmailAddress" style="width:200px;" />
+               </div>
+               <div class="intakeFieldLabel">
+                    Phone Number: <asp:RequiredFieldValidator ID="PhoneNumberValidator" ControlToValidate="PhoneNumber" runat="server" Text="*" ForeColor="Red"></asp:RequiredFieldValidator>
+               </div>
+               <div class="intakeFieldData">
+                    <input ID="PhoneNumber" runat="server" style="width:200px;" />
+               </div>
+               <div style="clear: both;">
+                    What are you inquiring about? <asp:RequiredFieldValidator ID="InquiryValidator" ControlToValidate="Inquiry" runat="server" Text="*" ForeColor="Red"></asp:RequiredFieldValidator>
+               </div>
+               <textarea id="Inquiry" style="width: 100%; height: 50px;"></textarea>
+          </div>
+          <div style="clear: both; padding-bottom: 20px;">
+               <input id="submit" type="button" value="Begin Chat" onclick="beginCustomerChat();">
+          </div>
+     </div>
+     <div id="chat">
+          <div id="topPanel">
+               <div id="participants">
+               </div>
+               <div id="chatBox">
+                    <div id="EndChatLayer">
+                         <input id="EndChat" type="button" value="End Chat" onclick="quit();" />
+                    </div>
+               </div>
+          </div>
+          <div id="bottomPanel">
+               <div id="messageBox">
+                    <table width="100%" cellpadding="0" cellspacing="0" style="height: 100%;">
+                    <tr>
+                         <td>
+                              <textarea id="CommentUpdate" style='height: 30px;'></textarea>
+                         </td>
+                         <td width='75px'>
+                              <input id='SendMessage' type="button" onclick="javascript:addMyMessage();" value="Send" />
+                         </td>
+                    </tr>
+                    </table>
+               </div>
+          </div>
+     </div>
+     <div id="wrapup">
+          <div id="thankyou">
+               <span id="DisconnectMessage">
+                    "test"
+               </span>
+               Thank you for contacting us<br />
+               <br />
+               <br />
+               <a id="thankyoustartover" href="#" onclick="startOver();">Click here to start over</a>
+          </div>
+     </div>
+     <div class="connectionstatus">
+          status: waiting on input...
+     </div>
+</body>
+</html>
