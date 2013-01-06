@@ -168,7 +168,7 @@ function assertChat(jid) {
 
      if (RunningInBrowser) {
           var chatWindow = window.open('#', jid, 'width=550,height=350,resizable=1');
-          chatWindow.location.href = 'Message.html?id=' + jid;
+          chatWindow.location.href = 'conversation.html?id=' + jid;
           participants.push(chatWindow);
           return { "window": chatWindow, "new": true };
      }

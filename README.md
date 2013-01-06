@@ -14,6 +14,7 @@ Installation:
 
 3. Open dashboard.html
 
+Note: To avoid cross-domain security issues access the html files from a url such as http://localhost/wingman/dashboard.html instead of the file path (file://c:/wingman/dashboard.html)
 
 For more information: www.weavver.com/products/wingman
 
