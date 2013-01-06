@@ -1,7 +1,10 @@
 Weavver Wingman
 ========
-License: MIT
-Status: Alpha
+License: MIT  
+Status: Alpha  
+Author: Weavver, Inc./Mitchel Constantin <mythicalbox@weavver.com>  
+Company Website: www.weavver.com  
+External Libraries: JsJAC, moment.js, ckeditor, jquery  
 
 Wingman is an HTML/XMPP powered dashboard for chat, managing phone calls, and communicating with website visitors.
 
@@ -17,7 +20,3 @@ Installation:
 Note: To avoid cross-domain security issues access the html files from a url such as http://localhost/wingman/dashboard.html instead of the file path (file://c:/wingman/dashboard.html)
 
 For more information: www.weavver.com/products/wingman
-
-Author: Weavver, Inc./Mitchel Constantin <mythicalbox@weavver.com>  
-Company Website: www.weavver.com  
-External Libraries: JsJAC, moment.js, ckeditor, jquery
