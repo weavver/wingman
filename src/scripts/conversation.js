@@ -1,4 +1,5 @@
-﻿//--------------------------------------------------------------------------------------------
+﻿/// <reference path="wingman.js" />
+//--------------------------------------------------------------------------------------------
 var MessageStyle = 'Chat'; // Customer
 //--------------------------------------------------------------------------------------------
 // typing notification: <message xmlns="jabber:client" xmlns:stream="http://etherx.jabber.org/streams" from="john_doe@web.chat/Laptop" to="david@web.chat" type="chat" id="purple20529fe1">

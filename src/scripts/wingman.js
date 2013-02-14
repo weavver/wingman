@@ -1,4 +1,7 @@
-﻿//--------------------------------------------------------------------------------------------
+﻿/// <reference path="vendors/jquery-1.8.3.min.js" />
+/// <reference path="common.js" />
+/// <reference path="conversation.js" />
+//--------------------------------------------------------------------------------------------
 function chat_getPseudoGuid() {
      return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
           var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);

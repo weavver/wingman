@@ -1,1 +1,5 @@
-scripts/config.js
+src/scripts/config.js
+*.config
+!src/web.config
+*.suo
+*.user
